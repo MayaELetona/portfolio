@@ -918,9 +918,11 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok{
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #fdf8d87e;
+  background-color: #ffc451;
   color: #004F2D;
-  font-size: 32px;
+  font-size: 42px;
+  font-weight: 700;
+  border-radius: 15px;
   padding: 12px 24px;
   cursor: pointer;
   border-radius: 1px;
