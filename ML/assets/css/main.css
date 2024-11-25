@@ -1,16 +1,4 @@
-/**
-* Template Name: Gp
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Updated: Aug 15 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
@@ -975,7 +963,7 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok{
 }
 
 .about .about-text p {
-  width: 70%;
+  width: 75%;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -1012,7 +1000,21 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok{
   justify-content: center;
 }
 .wrestling .wr-card {
-  padding-top: 10%;
+  display:flex;
+  padding-top: 15%;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.wrestling .card-body {
+  border-radius: 5px;
+}
+.wrestling .card {
+  background-color: #0000;
+  border: none;
+}
+.wrestling .card-body{
+  background-color: var(--background-color);
 }
 .wrestling h1{
   font-size: 20px;
@@ -1021,14 +1023,9 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok{
   color: var(--heading-color);
   padding-bottom: 1%;
 }
-.wrestling .header{
-  display: flex;
-  padding-left: 3%;
-  padding-right: 3%;
-  border-top: 3px solid #ffcb05;
-}
 .wrestling .img{
-  height: 65vh; 
-  width: 80vh;
+  height: 50vh; 
+  width: auto;
   object-fit: cover;
+  border-radius: 5px;
 }
