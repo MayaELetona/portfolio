@@ -993,3 +993,36 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok{
 .about p#linked-in-tag, p#instagram-tag{
   font-size: 12px;
 }
+/*--------------------------------------------
+# Wreslting Page
+--------------------------------------------*/
+.wrestling {
+  font-family: var(--nav-font);
+  height: 100vh;
+  position: relative;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrestling .wr-card {
+  padding-top: 10%;
+}
+.wrestling h1{
+  font-size: 20px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--heading-color);
+  padding-bottom: 1%;
+}
+.wrestling .header{
+  display: flex;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-top: 3px solid #ffcb05;
+}
+.wrestling .img{
+  height: 65vh; 
+  width: 80vh;
+  object-fit: cover;
+}
