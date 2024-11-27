@@ -990,42 +990,23 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok{
 /*--------------------------------------------
 # Wreslting Page
 --------------------------------------------*/
-.wrestling {
-  font-family: var(--nav-font);
-  height: 100vh;
+/*--------------------------------------------
+# Portfolio Pages
+---------------------------------------------*/
+.portfolio-page {
+  width: 100%;
+  min-height: 100vh;
   position: relative;
-  padding: 0;
+  padding: 120px 0 80px 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
 }
-.wrestling .wr-card {
-  display:flex;
-  padding-top: 15%;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
+.portfolio-page .container {
+  position: relative;
+  z-index: 0;
 }
-.wrestling .card-body {
-  border-radius: 5px;
-}
-.wrestling .card {
-  background-color: #0000;
-  border: none;
-}
-.wrestling .card-body{
-  background-color: var(--background-color);
-}
-.wrestling h1{
-  font-size: 20px;
-  margin: 0;
+.portfolio-page .title{
+  font-size: 56px;
   font-weight: 700;
-  color: var(--heading-color);
-  padding-bottom: 1%;
-}
-.wrestling .img{
-  height: 50vh; 
-  width: auto;
-  object-fit: cover;
-  border-radius: 5px;
 }
