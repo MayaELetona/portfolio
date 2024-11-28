@@ -1043,3 +1043,14 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok{
   display: flex;
   width: 100%;
 }
+.portfolio-imgbox {
+  display:flex;
+  padding-top: 10px;
+  align-items: start;
+  justify-content: start;
+}
+.portfolio-page .img {
+  height: auto; 
+  width: 150vh;
+  object-fit: cover;
+}
