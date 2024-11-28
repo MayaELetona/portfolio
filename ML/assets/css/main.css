@@ -1012,13 +1012,12 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok{
   color: var(--default-color);
 }
 .portfolio-page .header-text-box{
-  margin-top: 5%;
-  margin-bottom: 5%;
   display:flex;
   border-top: 2px solid var(--accent-color);
   padding-top: 10px;
   align-items: start;
   justify-content: start;
+  margin-bottom: 2vh;
 }
 .portfolio-page .portfolio-content-wrapper {
   margin-top: 2vw;
@@ -1049,6 +1048,7 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok{
   padding-top: 10px;
   align-items: start;
   justify-content: start;
+  margin-bottom: 3vw;
 }
 .portfolio-page .img {
   height: auto; 
