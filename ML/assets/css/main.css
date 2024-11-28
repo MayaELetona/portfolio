@@ -1009,6 +1009,7 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok{
   font-weight: 700;
   align-items: start;
   justify-content: start;
+  color: var(--default-color);
 }
 .portfolio-page .header-text-box{
   margin-top: 5%;
@@ -1053,4 +1054,7 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok{
   height: auto; 
   width: 150vh;
   object-fit: cover;
+}
+.rounded-video {
+  border-radius: 25px;
 }
