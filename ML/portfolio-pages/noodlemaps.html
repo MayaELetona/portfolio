@@ -51,15 +51,15 @@
       <section id="portfolio-page" class="portfolio-page section">
           <div class="container">
             <div class="row">
-                  <div class="col-xl-6 col-lg-8" data-aos="fade-up" data-aos-delay="400" onmouseover="type('title-moodmates', '@MayaELetona/MoodMates')" onmouseout="typeout('title-moodmates')">
-                      <a class="title" href="https://github.com/MayaELetona/MoodMates" target="_blank">MoodMates</a>
+                  <div class="col-xl-6 col-lg-8" data-aos="fade-up" data-aos-delay="400">
+                      <a class="title" href="https://github.com/MayaELetona/MoodMates" target="_blank">NoodleMaps</a>
                       <p id="title-moodmates"></p>
                   </div>
               </div>
               <div class="row" data-aos="fade-up" data-aos-delay="100">
                 <div class="header-text-box">
                   <div class="col">
-                    <h5>MoodMates</h5>
+                    <h5>NoodleMaps</h5>
                   </div>
                   <div class="col">
                     <h5>Overview</h5> 
@@ -67,9 +67,10 @@
                 </div>
                 <div class="row portolio-content-wrapper">
                   <div class="col-lg-5">
-                    <h1 class="portfolio-catchphrase">A mental health conscious app for friends. MoodMates, allows user to share 
-                      their moods and be aware of their friends moods in order to propose 
-                      activities that align with everyone's social battery.
+                    <h1 class="portfolio-catchphrase"> Saucy Routes for Savvy Shoppers! <br><br>
+                        NoodleMaps make groccery shopping fast and easy. Find the perfect route to 
+                        never miss a deal and leave the groccery story with everything on your list. 
+                        Discover discounts and new products, try new dishes and make cooking easier!
                     </h1>
                   </div>
                   <div class="col-lg-7">
@@ -81,10 +82,10 @@
                     <div class="row justify-content-center portoflio-content-wrapper">
                       <div class="col-10">
                         <div class="portfolio-subsection">
-                          <p>Students struggle to socialize with others in ways that align with their personal 
-                            boundaries and social battery. Its often said in college you will only get two things - 
-                            a social life, good grades or sleep. Finding balance between all these things can be taxing on
-                            students mental health. 
+                          <p> Grocery shopping is hard. Aisles swap, inventory rotates, and time and 
+                            money are wasted. Shoppers, new and old face the same issues of efficiency 
+                            in the store. Good luck finding all your gorccery list items at the best price, with your 
+                            prefered brand, without getting lost in the store or wandring the aisles. 
                           </p>  
                         </div>
                       </div>  
@@ -98,56 +99,73 @@
                     <div class="row justify-content-center portoflio-content-wrapper">
                       <div class="col-10">
                         <div class="portfolio-subsection">
-                          <p>MoodMates focuses on students who struggle to find ways to socialize in environments 
-                            that they are comfortable in. Our goal was to find a way to help these students, and
-                            allow them to socialize with others in ways that align with their mood and social battery.
-                            We help users communicate their moods and boundaries with their community in order to 
-                            help them socialize and build community. 
+                          <p>Noodle Maps is your groccery shopping personal assitant. Noodle Maps 
+                            creates the perfect groccery store route for you to pick up everything on 
+                            your list. Noodle Maps suggests store deals and uses AR and AI to help you 
+                            locate items and generate recipes based on your groccery list. 
+                          </p>  
+                        </div>
+                      </div>  
+                    </div>
+                    <div class="row portfolio-subheadings justify-content-center">
+                      <div class="col-10">
+                        <h1 class="portfolio-catchphrase">Project Details</h1>
+                      </div>  
+                    </div>
+                    
+                    <div class="row justify-content-center portoflio-content-wrapper">
+                      <div class="col-10">
+                        <div class="portfolio-subsection">
+                          <p><h5 style="color:rgba(0, 79, 45, 0.75);">Innovation & Design Lab 24'</h5> <br>
+                            The goals of this projects were:
+                            <ul>
+                              <li>Develop on original idea</li>
+                              <li>Delv into visual design</li>
+                              <li>Create an MVB [minimal viable brand]</li>
+                              <li>Create a pitch deck</li>
+                            </ul>
                           </p>  
                         </div>
                       </div>  
                     </div>
                   </div>
-                  <div class="row portfolio-imgbox">
-                    <div class="col">
-                      <div class="header-text-box">
-                        <h5>Wireframes</h5>
-                      </div>
-                      <div class="row align-items-center justify-content-center">
-                        <img class="img" src="../assets/img/MoodMatesWireframes.png">
-                      </div>
-                    </div>
-                  </div>
                   <div class="row portolio-content-wrapper">
                     <div class="col">
                       <div class="header-text-box">
-                        <h5>MVP -- React, JS, JSON + Python</h5>
+                        <h5>Pitch Deck</h5>
                       </div>
                       <div class="row portfolio-content-wrapper">
-                        <div class="col-lg-5">
-                          <video class="rounded-video" width="350" height="auto" controls>
-                            <source src="../assets/img/video/moodmates-video.mov" type="video/mp4">
-                            <source src="../assets/img/video/moodmates-video.mov" type="video/ogg">
-                          </video>
-                        </div>
                         <div class="col-lg-7">
+                          <div id="carouselContainer"></div>
+                            <script>
+                              fetch('carousel.html')
+                                .then(response => {
+                                  if (!response.ok) {
+                                    throw new Error('Network response was not ok ' + response.statusText);
+                                  }
+                                  return response.text();
+                                })
+                                .then(data => {
+                                  document.getElementById('carouselContainer').innerHTML = data;
+                                })
+                                .catch(error => {
+                                  console.error('Error loading the carousel:', error);
+                                  document.getElementById('carouselContainer').innerHTML = '<p>Failed to load carousel. Please try again later.</p>';
+                                });
+                            </script>
+                        </div>
+                        <div class="col-lg-5">
                           <div class="row portfolio-subheadings justify-content-center">
                               <div class="col-10">
-                                <h1 class=" portfolio-catchphrase">Developmemt</h1>
+                                <h1 class="portfolio-catchphrase">Pitch Deck</h1>
                             </div>
                           </div>
                           <div class="row justify-content-center portoflio-content-wrapper">
                             <div class="col-10">
                               <div class="portfolio-subsection">
-                                <p>Moodmates was a group project created by myself and three of my friends
-                                  for our UI class. We used Balsamiq and slide shows to create low-fidelity prototypes. 
-                                  We used Wizard of Oz style testing to collect user data and refine our idea. 
-                                  <br><br> After a few rounds of testing with users we settled on our design and 
-                                  functionality requirements. We then created Figma mockups of Moodmates and 
-                                  began to code!
-                                  <br><br>Utilizing Expo Go [react native sandbox] and Backendless [basic database hosting site] we created
-                                  this minimum viable product. This project was presented to our class and earned 
-                                  an A as our final project. 
+                                <p> As part of our final project we piched our idea to our professor and class. 
+                                  We highlighted features, user senarios, GUI outlines, alignemnt with social and tech treds, 
+                                  economic benefits, an overlook of the competitive landscape and our revenue model. 
                                 </p> 
                                 
                               </div>
