@@ -793,7 +793,7 @@ section,
   font-size: 24px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
-p#linked-in-tag, p#instagram-tag, p#github, p#tiktok{
+p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
   font-size: 12px;
 }
 .hero p span {
