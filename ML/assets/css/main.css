@@ -20,7 +20,7 @@
 :root {
   --nav-color: #ffc451;  /* The default color of the main navmenu links */
   --nav-hover-color: #FDF8D8; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #fdf8d800; /* Used as the background color for mobile navigation menu */
+  --nav-mobile-background-color: #FDF8D8; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #fdf8d800; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #ffc451; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
@@ -143,6 +143,10 @@ h6 {
   .header .navmenu {
     order: 3;
   }
+  .mobile-nav-toggle{
+    color: var(--contrast-color);
+    font-size: var(--default-font);
+  }
 }
 
 .scrolled .header {
@@ -224,12 +228,11 @@ h6 {
     margin: 0;
     padding: 10px 0;
     background: var(--nav-dropdown-background-color);
-    display: block;
-    position: absolute;
+    display: flex;
+    position: end;
     visibility: hidden;
     left: 14px;
     top: 130%;
-    opacity: 0;
     transition: 0.3s;
     border-radius: 0;
     z-index: 99;
@@ -297,15 +300,12 @@ h6 {
     display: none;
     list-style: none;
     position: absolute;
-    inset: 60px 20px 20px 20px;
+    inset: 50px 20px 20px 200px;
     padding: 10px 0;
     margin: 0;
     border-radius: 6px;
     background-color: var(--nav-mobile-background-color);
-    overflow-y: auto;
     transition: 0.3s;
-    z-index: 9998;
-    box-shadow: 0px 0px 30px rgb(0, 79, 45);
   }
 
   .navmenu a,
@@ -929,25 +929,26 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
 --------------------------------------------------------------*/
 .about {
   font-family: var(--nav-font);
-  height: 100vh;
-  position: relative;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .about .img{
   height: 65vh; 
   width: 80vh;
   object-fit: cover;
 }
-
+.about .about-front{
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .about h2 {
   margin: 0;
   font-size: 56px;
   font-weight: 700;
   font-family: var(--nav-font);
 }
+
 
 .about h2 span {
   color: var(--accent-color);
@@ -986,6 +987,17 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
 }
 .about p#linked-in-tag, p#instagram-tag{
   font-size: 12px;
+}
+.about .current-read-container {
+  margin-top: 2vw;
+}
+.about .current-book {
+  height: 30vh; 
+  width: auto;
+  object-fit: cover;
+}
+.about .underline {
+  border-bottom: 2px solid var(--accent-color);
 }
 /*--------------------------------------------
 # Wreslting Page
@@ -1059,3 +1071,12 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
 .rounded-video {
   border-radius: 25px;
 }
+/* Book Cards */
+
+.bookCardEx .card-body{
+  color: var(--contrast-color);
+}
+.bookCardEx .card-title {
+  color: var(--accent-color);
+}
+

@@ -42,6 +42,7 @@
           <li><a href="index.html#werk">Werk</a></li>
           <li><a href="about.html" class="active">About</a></li>
           <li><a href="wrestling.html">Wrestling</a></li>
+        </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
@@ -52,58 +53,106 @@
     <section id="about" class="about section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row">
-                <div class="col align-items-center justify-content-center">
-                    <img class="img" src="assets/img/headshot.JPEG" alt="About Image">
-                </div>
-                <div class="col about-text">
-                    <div class="row about-text">
-                        <div class="about-header">
-                            <h2>This is Maya<span>.</span></h2>
-                        </div>
-                        <div class="about-text">
-                            <p> Hi there, so glad you're here! I'm a California native soaking up life in NYC, where 
-                                I've developed a deep love for bagel sandwiches and the city's incredible museums. 
-                                As a former student-athlete turned professional, staying active is still a big part 
-                                of my life—I even bike to my morning practices (yes, even in winter!). I'm also a 
-                                creative at heart, whether it's building a new Lego set, hunting through thrift markets 
-                                to perfect my space, or bringing this website to life. Thanks for stopping by!
-                                <br/><br/>
-                                Check out my instagram for some flics, my tiktok for some daily vlogs, my linked in to stalk my professional 
-                                experience and of course my github for some sweet code!
-                            </p>  
-                        </div>
-                        <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                            <div class="col-xl-3 col-md-2" data-aos="fade-up" data-aos-delay="300" onmouseover="type('linked-in-tag', '@maya-letona')" onmouseout="typeout('linked-in-tag')">
-                              <div class="icon-box">
-                                <a  class="bi bi-linkedin" href="https://www.linkedin.com/in/maya-letona/" target="_blank"></a>
-                                <p class="linked-in-tag" id="linked-in-tag"></p>
-                              </div>
-                            </div>
-                            <div class="col-xl-3 col-md-2" data-aos="fade-up" data-aos-delay="400" onmouseover="type('instagram-tag', '@maya.letona')" onmouseout="typeout('instagram-tag')">
-                              <div class="icon-box">
-                                <a class="bi bi-instagram" href="https://www.instagram.com/maya.letona/" target="_blank"></a>
-                                <p class="instagram-tag" id="instagram-tag"></p>
-                              </div>
-                            </div>
-                            <div class="col-xl-3 col-md-2" data-aos="fade-up" data-aos-delay="400" onmouseover="type('github', '@MayaELetona')" onmouseout="typeout('github')">
-                                <div class="icon-box">
-                                  <a class="bi bi-github" href="https://github.com/MayaELetona" target="_blank"></a>
-                                  <p class="github" id="github"></p>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-2" data-aos="fade-up" data-aos-delay="400" onmouseover="type('tiktok', '@vidalucha')" onmouseout="typeout('tiktok')">
-                                <div class="icon-box">
-                                  <a class="bi bi-tiktok" href="https://www.tiktok.com/@vidalucha" target="_blank"></a>
-                                  <p class="tiktok" id="tiktok"></p>
-                                </div>
-                            </div>
+              <div class="about-front">
+                  <div class="col align-items-center justify-content-center">
+                      <img class="img" src="assets/img/headshot.JPEG" alt="About Image">
+                  </div>
+                  <div class="col about-text">
+                      <div class="row about-text">
+                          <div class="about-header">
+                              <h2>This is Maya<span>.</span></h2>
                           </div>
+                          <div class="about-text">
+                              <p> Hi there, so glad you're here! I'm a California native soaking up life in NYC, where 
+                                  I've developed a deep love for bagel sandwiches and the city's incredible museums. 
+                                  As a former student-athlete turned professional, staying active is still a big part 
+                                  of my life—I even bike to my morning practices (yes, even in winter!). I'm also a 
+                                  creative at heart, whether it's building a new Lego set, hunting through thrift markets 
+                                  to perfect my space, or bringing this website to life. Thanks for stopping by!
+                                  <br/><br/>
+                                  Check out my instagram for some flics, my tiktok for some daily vlogs, my linked in to stalk my professional 
+                                  experience and of course my github for some sweet code!
+                              </p>  
+                          </div>
+                          <div class="row gy-4 mt-5 justify-content-center">
+                              <div class="col-xl-3 col-md-2" data-aos="fade-up" data-aos-delay="150" onmouseover="type('linked-in-tag', '@maya-letona')" onmouseout="typeout('linked-in-tag')">
+                                <div class="icon-box">
+                                  <a  class="bi bi-linkedin" href="https://www.linkedin.com/in/maya-letona/" target="_blank"></a>
+                                  <p class="linked-in-tag" id="linked-in-tag"></p>
+                                </div>
+                              </div>
+                              <div class="col-xl-3 col-md-2" data-aos="fade-up" data-aos-delay="250" onmouseover="type('instagram-tag', '@maya.letona')" onmouseout="typeout('instagram-tag')">
+                                <div class="icon-box">
+                                  <a class="bi bi-instagram" href="https://www.instagram.com/maya.letona/" target="_blank"></a>
+                                  <p class="instagram-tag" id="instagram-tag"></p>
+                                </div>
+                              </div>
+                              <div class="col-xl-3 col-md-2" data-aos="fade-up" data-aos-delay="350" onmouseover="type('github', '@MayaELetona')" onmouseout="typeout('github')">
+                                  <div class="icon-box">
+                                    <a class="bi bi-github" href="https://github.com/MayaELetona" target="_blank"></a>
+                                    <p class="github" id="github"></p>
+                                  </div>
+                              </div>
+                              <div class="col-xl-3 col-md-2" data-aos="fade-up" data-aos-delay="450" onmouseover="type('tiktok', '@vidalucha')" onmouseout="typeout('tiktok')">
+                                  <div class="icon-box">
+                                    <a class="bi bi-tiktok" href="https://www.tiktok.com/@vidalucha" target="_blank"></a>
+                                    <p class="tiktok" id="tiktok"></p>
+                                  </div>
+                              </div>
+                            </div>
+                      </div>  
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                  <div class="col-10 underline">
+                    <h2>Reading List<span>.</span></h2>
+                    <h3>Current Read:</h3>
+                  </div>
+                  <div id="bookCard"class="col-10">
+                    <script>
+                      fetch('assets/bookCard.html')
+                        .then(response => {
+                          if (!response.ok) {
+                            throw new Error('Network response was not ok ' + response.statusText);
+                          }
+                          return response.text();
+                        })
+                        .then(data => {
+                          document.getElementById('bookCard').innerHTML = data;
+                        })
+                        .catch(error => {
+                          console.error('Error loading card: ', error);
+                          document.getElementById('bookCard').innerHTML = '<p>failed to load card</p>';
+                        });
+                    </script>
+                    <div class="current-read-container">
+                      <div class="row">
+                        <div class="col">
+                            <img class="current-book" src="assets/img/reading-list/DareToLead.jpg">
+                          </div> 
+                          <div class="col">
+                            <p class="about-text">
+                              This book was a gift from the Columbia Womens Basketball Head Coach, Megan Griffith. 
+                              Brown opens up about how vulnerability plays a role in our lives and give tool on rumbling 
+                              wth vulnerability through leadership positions. 
+                            </p>
+                          </div>  
+                      </div>
                         
                     </div>
-                    
+                  </div>
+                </div>
+                <div class="col-lg-6">
+
                 </div>
             </div>
-        </div>    
+          </div>
+          
+              
+        </div>  
+
     </section>
     
 
