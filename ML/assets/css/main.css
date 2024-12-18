@@ -21,8 +21,8 @@
   --nav-color: #ffc451;  /* The default color of the main navmenu links */
   --nav-hover-color: #FDF8D8; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #FDF8D8; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #fdf8d800; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-background-color: #FDF8D8; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #004F2D; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #ffc451; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -306,6 +306,7 @@ h6 {
     border-radius: 6px;
     background-color: var(--nav-mobile-background-color);
     transition: 0.3s;
+    max-height: fit-content;
   }
 
   .navmenu a,
@@ -379,7 +380,7 @@ h6 {
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #fdf8d800;
+    color: var(--contrast-color);
     position: absolute;
     font-size: 32px;
     top: 15px;
@@ -392,7 +393,7 @@ h6 {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: var(--background-color);
     transition: 0.3s;
   }
 
