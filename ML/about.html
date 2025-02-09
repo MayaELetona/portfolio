@@ -107,8 +107,8 @@
             <div class="row">
 
 
-                <div class="col-lg-6">
-                  <div class="col-10 underline">
+                <div class="col">
+                  <div class="underline">
                     <h2>Reading List<span>.</span></h2>
                     <h3>Current Read:</h3>
                     <div id="bookCard" class="row">
@@ -125,17 +125,19 @@
                               data.books.forEach(book => {
                                 booksHTML += `
                                   <div class="book-card current-read-container">
-                                    <img src="${book.image}" alt="${book.title}" class="current-book">
-                                    <div class="book-details">
-                                      <h3 class="book-title">${book.title}</h3>
-                                      <p class="book-author">by ${book.author}</p>
-                                      <p class="book-description">${book.summary}</p>
-                                      <a href="${book.purchaseLink}" target="_blank" class="book-link">Buy this book</a>
+                                    <div class="book-card-content">
+                                      <img src="${book.image}" alt="${book.title}" class="current-book">
+                                      <div class="book-details">
+                                        <h3 class="book-title">${book.title}</h3>
+                                        <p class="book-author">by ${book.author}</p>
+                                        <p class="book-description">${book.summary}</p>
+                                        <a href="${book.purchaseLink}" target="_blank" class="book-link">Buy this book</a>
+                                      </div>
                                     </div>
                                   </div>
                                 `;
                               });
-                            document.getElementById('bookCard').innerHTML = booksHTML;
+                              document.getElementById('bookCard').innerHTML = `<div class="book-card-container">${booksHTML}</div>`;
                             })
                           .catch(error => {
                             console.error('Error loading book data: ', error);
