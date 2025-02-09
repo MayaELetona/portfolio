@@ -23,13 +23,34 @@
     <!-- Main CSS File -->
     <link href="../assets/css/main.css" rel="stylesheet">
   </head>
+  <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          fetch("books.json")
+              .then(response => response.json())
+              .then(data => {
+                  console.log(data);
+                  const bookContainer = document.getElementById("bookCard");
+                  bookContainer.innerHTML = ""; // Clear existing content
+                  
+                  data.books.forEach(book => {
+                      const bookCard = document.createElement("div");
+                      bookCard.classList.add("card");
+      
+                      bookCard.innerHTML = `
+                          <img class="card-img-top" src="${book.image}" alt="${book.title}">
+                          <div class="card-body">
+                              <h5 class="card-title">${book.title}</h5>
+                              <p class="card-text">${book.summary}</p>
+                              <a href="${book.purchaseLink}" class="btn btn-primary" target="_blank">Buy Now</a>
+                          </div>
+                      `;
+      
+                      bookContainer.appendChild(bookCard);
+                  });
+              })
+              .catch(error => console.error("Error loading books:", error));
+          });
+      </script>    
+  </body>
   
-
-<div id="bookCardEx" class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>

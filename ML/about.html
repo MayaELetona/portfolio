@@ -23,7 +23,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
+  <link href="assets/bookCard.html">
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -105,52 +105,47 @@
               </div>
             </div>
             <div class="row">
+
+
                 <div class="col-lg-6">
                   <div class="col-10 underline">
                     <h2>Reading List<span>.</span></h2>
                     <h3>Current Read:</h3>
-                  </div>
-                  <div id="bookCard"class="col-10">
-                    <script>
-                      fetch('assets/bookCard.html')
-                        .then(response => {
-                          if (!response.ok) {
-                            throw new Error('Network response was not ok ' + response.statusText);
-                          }
-                          return response.text();
-                        })
-                        .then(data => {
-                          document.getElementById('bookCard').innerHTML = data;
-                        })
-                        .catch(error => {
-                          console.error('Error loading card: ', error);
-                          document.getElementById('bookCard').innerHTML = '<p>failed to load card</p>';
-                        });
-                    </script>
-                    <div class="current-read-container">
-                      <div class="row">
-                        <div class="col">
-                            <img class="current-book" src="assets/img/reading-list/DareToLead.jpg">
-                          </div> 
-                          <div class="col">
-                            <p class="about-text">
-                              This book was a gift from the Columbia Womens Basketball Head Coach, Megan Griffith. 
-                              Brown opens up about how vulnerability plays a role in our lives and give tool on rumbling 
-                              wth vulnerability through leadership positions. 
-                            </p>
-                          </div>  
-                      </div>
-                        
+                    <div id="bookCard" class="row">
+                      <script>
+                        fetch('assets/books.json')  <!-- Fetch the JSON data instead of HTML -->
+                          .then(response => {
+                            if (!response.ok) {
+                              throw new Error('Network response was not ok ' + response.statusText);
+                            }
+                            return response.json(); // Parse as JSON
+                          })
+                          .then(data => {
+                            let booksHTML = ''; // Initialize an empty string to store the HTML
+                              data.books.forEach(book => {
+                                booksHTML += `
+                                  <div class="book-card current-read-container">
+                                    <img src="${book.image}" alt="${book.title}" class="current-book">
+                                    <div class="book-details">
+                                      <h3 class="book-title">${book.title}</h3>
+                                      <p class="book-author">by ${book.author}</p>
+                                      <p class="book-description">${book.summary}</p>
+                                      <a href="${book.purchaseLink}" target="_blank" class="book-link">Buy this book</a>
+                                    </div>
+                                  </div>
+                                `;
+                              });
+                            document.getElementById('bookCard').innerHTML = booksHTML;
+                            })
+                          .catch(error => {
+                            console.error('Error loading book data: ', error);
+                            document.getElementById('bookCard').innerHTML = '<p>Failed to load book data</p>';
+                          });
+                      </script>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-
                 </div>
             </div>
-          </div>
-          
-              
+          </div>  
         </div>  
 
     </section>
@@ -167,7 +162,6 @@
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

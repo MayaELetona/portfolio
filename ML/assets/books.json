@@ -1,0 +1,61 @@
+{
+    "books": [
+      {
+        "title": "Dare to Lead",
+        "author": "Brené Brown",
+        "image": "assets/img/reading-list/DareToLead.jpg",
+        "summary": "This book was a gift from the Columbia Women's Basketball Head Coach, Megan Griffith. Brown explores how vulnerability plays a role in our lives and provides tools for embracing it in leadership roles.",
+        "purchaseLink": "https://www.amazon.com/Dare-Lead-Brave-Conversations-Hearts/dp/0399592520"
+      },
+      {
+        "title":"Freedom is a Constant Struggle", 
+        "author":"Angela Y Davis",
+        "image":"assets/img/reading-list/freedomIsAConstantStruggle.png",
+        "summary":"Angela Davis discusses the impact intersectionality through social justice movements.", 
+        "purchaseLink":"https://www.amazon.com/Freedom-Constant-Struggle-Palestine-Foundations/dp/B07X1SJC4F"
+      },
+      {
+        "title":"The Rise Of Superman, Decoding The Science Of Ultimate Human Performance", 
+        "author":"Steven Kotler",
+        "image":"assets/img/reading-list/theRiseOfSuperman.jpg",
+        "summary":"Angela Davis discusses the impact intersectionality through social justice movements.", 
+        "purchaseLink":"https://www.amazon.com/Rise-Superman-Decoding-Ultimate-Performance/dp/1784291226/ref=sr_1_11_sspa?crid=1EFLA53U4EROM&dib=eyJ2IjoiMSJ9.zjuqw5Iu3TGfdhlof7OfjJpPLUzJeUi9Apwzr8RPRFgPKc_PiQtStksGFtNDxlK6okpm5bNzamDnOMSEV786MRpiilZq9YcOVI8jbF8dSj50LOihQP0B-p-waI4byODCPskxQZ9HFb2KDJFGoer4YVZrdhKuVU95Mi9rU4i-K_Vf7_M1k_S1XupLAdBLHuGlZG5-l8Zmp_UvOmcdFk47_pBXPucKjvFzFcaavqtOOGg.YZO9Xuqf6tIZWXYVAgUmaVeFJNqEW7hyEW5JqDuTUj4&dib_tag=se&keywords=the+rise+of+superman&qid=1739059759&s=books&sprefix=the+rise+of+superman+%2Cstripbooks%2C95&sr=1-11-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1&smid=A1SVAUAYKYZZD3"
+      },
+      {
+        "title":"Legacy, What The All Blacks Can Teach Us About The Business Of Life", 
+        "author":"James Kerr",
+        "image":"assets/img/reading-list/Legacy.jpg",
+        "summary":"Angela Davis discusses the impact intersectionality through social justice movements.", 
+        "purchaseLink":"https://www.amazon.com/Legacy-James-Kerr/dp/147210353X/ref=sr_1_1?crid=2GEB6SUDJWIR0&dib=eyJ2IjoiMSJ9.GkBB9n1YtSCqaTD4sQ-s2u-MVE4Z5s9L85k78ngN-YdpF_-12Oq2s18IekHt6nMJhjkmEV545xws_ZcpUPES60MXwgzfatbJ0kWGsRdxaYbyo_NitCKuarG1hHzCaNOmIqXPF8WjRfP-BQZCks1LoAq3D4hExUK92q_lzXu8PRXwkrlk9jW-IUqJwqTGftz3DqyeCA3RL0jTz6JNACoEAQt95UPEEOu0EXL78NRygSlSak1Fd8O344nS5_toflgCAiROXODiZeIxBxW2dNIsvsaMePTvVA3bQu5wYEkgSmw.aFyy3rUFxgAMVv-F79N2T9KqvUsAV_i8tcDsMybFuNE&dib_tag=se&keywords=legacy+by+james+kerr&qid=1739060074&s=audible&sprefix=legacy+by+james+kerr%2Caudible%2C81&sr=1-1-catcorr"
+      },
+      {
+        "title":"Atomic Habits", 
+        "author":"James Clear",
+        "image":"assets/img/reading-list/AtomicHabits.jpg",
+        "summary":"Angela Davis discusses the impact intersectionality through social justice movements.", 
+        "purchaseLink":"https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299/ref=sr_1_1?crid=1H52BX1DK0F9X&dib=eyJ2IjoiMSJ9.iK33XS_fMSvBGfTjIj1wNrDqNLMClGYeyPSjn4Xphct8hRO9R5qjU1SQzB6J_AKLnX9Mn6tibyssxfeW0SYlj8r1OlwzbJ49o1daOWSn9F2c0RIpdCSYuniVkovBhl9xGVMy2Hr-pAD8fv93CEdeSR2JYmqn6GppoUvzvIr7ZChSZ9PX9rbTbmN8bLlxtJ45Qav2ocg5jYD3jF-1PB43Ly8jKlAzBP6jDs8aONTOwjc.EoAU_2wlJio9nBcpJh6VPr4lCzOqEN-Hebz0q627PGQ&dib_tag=se&keywords=atomic+habits&qid=1739060233&s=books&sprefix=atomic+habits%2Cstripbooks%2C98&sr=1-1"
+      }, 
+      {
+        "title":"Above The Line", 
+        "author":"Urban Meyer",
+        "image":"assets/img/reading-list/AboveTheLine.jpg",
+        "summary":"Angela Davis discusses the impact intersectionality through social justice movements.", 
+        "purchaseLink":"https://www.amazon.com/Above-Line-Lessons-Leadership-Championship/dp/1101980729/ref=sr_1_1?crid=1B5GXAOPTT35T&dib=eyJ2IjoiMSJ9.Kk4Ma2B9Kp22v1wmsz-LCb_fzuIntVRggi-rUpYiahQcXxaERfSdjtZ5FV3sC9ZDsYGdd6jAzHwvOjmFNMbOqufzYDm-5MJF24n-NtJZ92mNPVym3MlT-m1dv56H0buKErRFoXx_VM3YcHEgIUuPKpSIXBrQ9dVqmKklIxP4Z0Tn79r72YjmGzRmPijqsuWzi-HhGP9iTcGrmB7_I47ss7I4fR2dM9J0BhxlitgomsE.1v3PRntmIyumI1jrXsQZLFa3j8Fi0VjmmvDkYFy80UM&dib_tag=se&keywords=above+the+line&qid=1739060415&s=books&sprefix=above+the+lin%2Cstripbooks%2C103&sr=1-1"
+      },
+      {
+        "title":"On Civil Disobedience", 
+        "author":"Henry David Thoreau and Hanna Arendt",
+        "image":"assets/img/reading-list/OnCivilDisobedience.jpg",
+        "summary":"Angela Davis discusses the impact intersectionality through social justice movements.", 
+        "purchaseLink":"https://www.amazon.com/Civil-Disobedience-Hannah-Arendt/dp/1598537911"
+      },
+      {
+        "title":"Range, Why Generalists Triumph In a Specialized World", 
+        "author":"David Epstein",
+        "image":"assets/img/reading-list/OnCivilDisobedience.jpg",
+        "summary":"Angela Davis discusses the impact intersectionality through social justice movements.", 
+        "purchaseLink":"https://www.amazon.com/Range-Generalists-Triumph-Specialized-World/dp/0735214506/ref=sr_1_1?crid=213WXBCFY6KXI&dib=eyJ2IjoiMSJ9.7DB7KL0X_ysuu5f9LDEn1U8j-9H2RpOK2GwznBek2a2QN8qG5vq1yW9GiXXT97e8sk8Zzo9rOvaFtJH8-IJOpzEaVOKEFLzbI7NtFZGQm9wwv27EYTjzu7N66Eh0_e5narlukL-zl9SbiW43WVZ6SdIbkcj2RZfMlFHICsU6zmWuRzmU6O4lo49D0ZEViprUX2zW7PPNMfwjMq07rs4I8AsJYnbj1Mpy7i5gDLfAl3U.yvG2pnE0BXgBqdo4xBkBtw929Afn-efs4Y9WwIQH-vg&dib_tag=se&keywords=range+by+david+epstein&qid=1739060777&s=books&sprefix=range+by+%2Cstripbooks%2C103&sr=1-1"
+      }
+
+    ]
+  }

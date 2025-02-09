@@ -989,13 +989,24 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
 .about p#linked-in-tag, p#instagram-tag{
   font-size: 12px;
 }
+.about .bookCard{
+  display: flex;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .about .current-read-container {
   margin-top: 2vw;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vw;
 }
 .about .current-book {
-  height: 30vh; 
-  width: auto;
-  object-fit: cover;
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
 }
 .about .underline {
   border-bottom: 2px solid var(--accent-color);
