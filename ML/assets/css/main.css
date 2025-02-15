@@ -991,18 +991,21 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
 }
 .book-card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 20px; /* Space between cards */
-  padding: 20px;
+  padding: 10px;
 }
 
 .book-card {
   display: flex;
-  flex-direction: row; /* Stack the image and text vertically */
+  flex-direction: row;
   margin-bottom: 20px;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px var(--accent-color, .1);
+  border-color: var(--accent-color);
+  border-style: solid;
+  
+  /*box-shadow: 0 4px 8px var(--accent-color, .1);*/
 }
 
 .book-card-content {
@@ -1022,6 +1025,26 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
 }
 .about .underline {
   border-bottom: 2px solid var(--accent-color);
+}
+@media (max-width: 768px) {
+  .book-card-container {
+    grid-template-columns: 1fr; /* 1 card per row on smaller screens */
+  }
+  .book-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .img{
+    height: fit-content; 
+    width: 50vh;
+    object-fit: cover;
+  }
+  .about .about-front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 /*--------------------------------------------
 # Wreslting Page
