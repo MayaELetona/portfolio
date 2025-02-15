@@ -1,6 +1,14 @@
 {
     "books": [
       {
+        "title": "Visual Thinking: The Hidden Gifts of People Who Think in Pictures, Patterns, and Abstractions",
+        "author": "Temple Grandin", 
+        "image": "assets/img/reading-list/VisualThinking.jpg", 
+        "summary": "In Visual Thinking, Temple Grandin explores how visual thinkers can contribute to creativity, problem solving, and innovation. She advocates for a more inclusive society that values different ways of thinking.", 
+        "purchaseLink": "https://www.amazon.com/Visual-Thinking-Pictures-Patterns-Abstractions/dp/0593418379/ref=asc_df_0593418379?mcid=219f4c74d34c3227bafe3b35105ebd36&tag=hyprod-20&linkCode=df0&hvadid=693327322263&hvpos=&hvnetw=g&hvrand=13345439899385292259&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001987&hvtargid=pla-2380302071992&psc=1"
+      },
+      
+      {
         "title": "All About Love, New Visions",
         "author": "Bell Hooks",
         "image": "assets/img/reading-list/AllAboutLove.jpg",

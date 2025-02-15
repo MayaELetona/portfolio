@@ -165,7 +165,7 @@ h6 {
 .index-page.scrolled .header {
   --background-color: rgb(253, 248, 216);
 }
-.index-page.scrolled .header .logo {
+.scrolled .header .logo {
   display: none;
   transform: translateY(-20px);
   opacity: 0;
@@ -992,7 +992,7 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
 .book-card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
-  gap: 20px; /* Space between cards */
+  gap: 20px; 
   padding: 10px;
 }
 
@@ -1004,8 +1004,6 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
   border-radius: 8px;
   border-color: var(--accent-color);
   border-style: solid;
-  
-  /*box-shadow: 0 4px 8px var(--accent-color, .1);*/
 }
 
 .book-card-content {
@@ -1013,7 +1011,12 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
   flex-direction: row;
   align-items: center;
 }
-
+.book-link {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  color: var(--accent-color);
+}
 .about .current-read-container {
   margin-top: 2vw;
   margin-bottom: 2vw;
