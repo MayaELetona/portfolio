@@ -1121,6 +1121,11 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
 .rounded-video {
   border-radius: 25px;
 }
+@media (max-width: 768px) {
+  .portfolio-catchphrase {
+    font-size: 30px;
+  }
+}
 /* Book Cards */
 
 .bookCardEx .card-body{
