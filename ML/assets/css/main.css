@@ -1030,6 +1030,9 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
   border-bottom: 2px solid var(--accent-color);
 }
 @media (max-width: 768px) {
+  .img {
+    height: 30vh;
+  }
   .book-card-container {
     grid-template-columns: 1fr; /* 1 card per row on smaller screens */
   }
