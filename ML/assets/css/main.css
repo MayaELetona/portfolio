@@ -1033,8 +1033,10 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
     justify-content: center;
   }
   .about .img {
-    height: 30%;
-    width:auto;
+    width: 100%; 
+    height: auto; 
+    max-height: 50vh; 
+    object-fit: contain;
   }
   .book-card-container {
     grid-template-columns: 1fr; /* 1 card per row on smaller screens */
@@ -1043,11 +1045,6 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .about .img{
-    height: 50vh; 
-    width:max-content;
-    object-fit: cover;
   }
   .about .about-front{
     display: flex;
