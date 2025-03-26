@@ -1034,6 +1034,7 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
   }
   .about .img {
     height: 30%;
+    width:auto;
   }
   .book-card-container {
     grid-template-columns: 1fr; /* 1 card per row on smaller screens */
