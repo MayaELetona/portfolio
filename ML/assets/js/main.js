@@ -230,3 +230,14 @@ function typeout(id) {
   typingIndex = 0; 
   document.getElementById(id).innerHTML = ""; 
 }
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+});

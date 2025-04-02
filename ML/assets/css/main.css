@@ -1146,3 +1146,25 @@ p#linked-in-tag, p#instagram-tag, p#github, p#tiktok, p#resume{
   color: var(--accent-color);
 }
 
+/* Wr Story Section */
+
+.wr-img{
+  height: auto;
+  width: 75vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wr-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  margin-bottom: 1vw;
+  margin: 0 5vh 0 5vh;
+  font-family: var(--default-font);
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
